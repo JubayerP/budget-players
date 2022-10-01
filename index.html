@@ -33,7 +33,7 @@
     </header>
 
     <!-- players -->
-    <section class="bg-[#151515] py-24">
+    <section class="bg-[#151515] py-24 flex justify-around">
         <div class="grid grid-cols-3 gap-4">
             <div class="mx-auto border pb-6">
                 <img src="./images/players/player-1.png" alt="">
@@ -79,10 +79,43 @@
             </div>
         </div>
         <div>
-            <div class="bg-[#0D0D0D] w-[16.5rem] h-[23rem]">
-                <h2 class="text-4xl">Selected - V</h2>
+            <div class="bg-[#0D0D0D] max-w-[16.5rem] h-[23rem] py-5">
+                <h2 class="text-3xl text-white font-semibold text-center">Selected - V</h2>
+                <ul>
+
+                </ul>
             </div>
-            <div></div>
+            <div class="bg-[#0D0D0D] w-[16.5rem] h-auto py-5 mt-[2rem]">
+                <h2 class="text-3xl text-white font-semibold text-center">Budget</h2>
+                <div>
+                    <div class="flex items-center justify-around text-white">
+                        <p class="text-white text-xl">Per Player </p>
+                        <input class="bg-[#0D0D0D] border outline-0 w-[121px] p-1.5 my-8" type="text">
+                    </div>
+                    <div class="text-center">
+                        <button class="mb-8 px-20 py-2.5 bg-[#015196] text-white font-semibold">Calculate</button>
+                    </div>
+                </div>
+                <div class="flex justify-around items-center text-white text-xl">
+                    <span class="mr-6">Player Expense</span>
+                    <p>$<span>00</span></p>
+                </div>
+                <div class="flex items-center justify-around text-white">
+                    <p class="text-white text-xl">Manager</p>
+                    <input class="bg-[#0D0D0D] border outline-0 w-[121px] p-1.5 my-8" type="text">
+                </div>
+                <div class="flex items-center justify-around text-white">
+                    <p class="text-white text-xl">Coach</p>
+                    <input class="bg-[#0D0D0D] border outline-0 w-[121px] p-1.5 my-8" type="text">
+                </div>
+                <div class="text-center">
+                    <button class="mb-8 px-20 py-2.5 bg-[#015196] text-white font-semibold">Total</button>
+                </div>
+                <div class="flex justify-around items-center text-white text-xl">
+                    <span class="mr-6">Total</span>
+                    <p class="text-[#FF5E19]">$<span>00</span></p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
