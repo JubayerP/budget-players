@@ -60,3 +60,32 @@ document.getElementById("btn-6").addEventListener("click", function () {
   document.getElementById("btn-6").style.backgroundColor = "#A2A9AF";
   document.getElementById("btn-6").setAttribute("disabled", "");
 });
+
+document.getElementById("btn-calculate").addEventListener("click", function () {
+  const playerLists = document.getElementsByTagName("li").length;
+  const playerField = document.getElementById("per-player-flield").value;
+  const playerExpense = document.getElementById("player-expense");
+  const playerBudget = playerLists * playerField;
+  playerExpense.innerText = playerBudget;
+});
+
+document
+  .getElementById("calculate-total-btn")
+  .addEventListener("click", function () {
+    const playerLists = document.getElementsByTagName("li").length;
+    const playerField = document.getElementById("per-player-flield").value;
+    const playerBudget = playerLists * playerField;
+
+    const manager = parseFloat(document.getElementById("manager").value);
+    const coach = parseFloat(document.getElementById("coach").value);
+
+    if ( manager == '' ||  coach == '') {
+      alert("Name must be filled out");
+      return false;
+    } else {
+      const totalCalculation = playerBudget + manager + coach;
+
+      const totalCalculate = document.getElementById("total-money");
+      totalCalculate.innerText = totalCalculation;
+    }
+  });
