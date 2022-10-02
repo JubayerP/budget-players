@@ -64,22 +64,26 @@ document.getElementById("btn-6").addEventListener("click", function () {
 document.getElementById("btn-calculate").addEventListener("click", function () {
   const playerLists = document.getElementsByTagName("li").length;
   const playerField = document.getElementById("per-player-flield").value;
-  const playerExpense = document.getElementById("player-expense");
+    const playerExpense = document.getElementById("player-expense");
+    if (playerLists < 1) {
+        return alert('Please Add Five Players')
+    }
   const playerBudget = playerLists * playerField;
   playerExpense.innerText = playerBudget;
 });
 
-document
-  .getElementById("calculate-total-btn")
-  .addEventListener("click", function () {
+document.getElementById("calculate-total-btn").addEventListener("click", function () {
     const playerLists = document.getElementsByTagName("li").length;
     const playerField = document.getElementById("per-player-flield").value;
     const playerBudget = playerLists * playerField;
 
-    const manager = parseFloat(document.getElementById("manager").value);
-    const coach = parseFloat(document.getElementById("coach").value);
+    const managerInput = document.getElementById("manager");
+    const coachInput = document.getElementById("coach");
 
-    if ( manager == '' ||  coach == '') {
+    const manager = parseFloat(managerInput.value);
+    const coach = parseFloat(coachInput.value);
+
+    if ( typeof managerInput !== 'number' || typeof coachInput == 'number') {
       alert("Name must be filled out");
       return false;
     } else {
