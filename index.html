@@ -33,55 +33,55 @@
     </header>
 
     <!-- players -->
-    <section class="bg-[#151515] py-24 flex justify-around">
-        <div class="grid grid-cols-3 gap-4">
-            <div class="mx-auto border pb-6">
+    <section class="bg-[#151515] py-24 flex justify-around items-center">
+        <div id="select-btn" class="grid grid-cols-3 gap-4">
+            <div class="mx-auto border pb-6 h-[23rem]">
                 <img src="./images/players/player-1.png" alt="">
                 <div class="text-center">
-                    <h5 class="text-center text-xl font-semibold text-white my-5">Lionel Messi</h5>
-                    <button class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
+                    <h5 id="player-1" class="text-center text-xl font-semibold text-white my-5">Lionel Messi</h5>
+                    <button id="btn-1" class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
                 </div>
             </div>
-            <div class="mx-auto border pb-6">
+            <div class="mx-auto border pb-6 h-[23rem]">
                 <img src="./images/players/player-2.png" alt="">
                 <div class="text-center">
-                    <h5 class="text-center text-xl font-semibold text-white my-5">Neymar Jr</h5>
-                    <button class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
+                    <h5 id="player-2" class="text-center text-xl font-semibold text-white my-5">Neymar Jr</h5>
+                    <button id="btn-2" class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
                 </div>
             </div>
-            <div class="mx-auto border pb-6">
+            <div class="mx-auto border pb-6 h-[23rem]">
                 <img src="./images/players/player-3.png" alt="">
                 <div class="text-center">
-                    <h5 class="text-center text-xl font-semibold text-white my-5">Kylian Mbappé</h5>
-                    <button class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
+                    <h5 id="player-3" class="text-center text-xl font-semibold text-white my-5">Kylian Mbappé</h5>
+                    <button id="btn-3" class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
                 </div>
             </div>
-            <div class="mx-auto border pb-6">
+            <div class="mx-auto border pb-6 h-[23rem]">
                 <img src="./images/players/player-4.png" alt="">
                 <div class="text-center">
-                    <h5 class="text-center text-xl font-semibold text-white my-5">Vítor Machado</h5>
-                    <button class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
+                    <h5 id="player-4" class="text-center text-xl font-semibold text-white my-5">Vítor Machado</h5>
+                    <button id="btn-4" class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
                 </div>
             </div>
-            <div class="mx-auto border pb-6">
+            <div class="mx-auto border pb-6 h-[23rem]">
                 <img src="./images/players/player-5.png" alt="">
                 <div class="text-center">
-                    <h5 class="text-center text-xl font-semibold text-white my-5">Sergio Ramos</h5>
-                    <button class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
+                    <h5 id="player-5" class="text-center text-xl font-semibold text-white my-5">Sergio Ramos</h5>
+                    <button id="btn-5" class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
                 </div>
             </div>
-            <div class="mx-auto border pb-6">
+            <div class="mx-auto border pb-6 h-[23rem]">
                 <img src="./images/players/player-6.png" alt="">
                 <div class="text-center">
-                    <h5 class="text-center text-xl font-semibold text-white my-5">Renato Sanches</h5>
-                    <button class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
+                    <h5 id="player-6" class="text-center text-xl font-semibold text-white my-5">Renato Sanches</h5>
+                    <button id="btn-6" class=" px-20 py-2.5 bg-[#015196] text-white font-semibold">SELECT</button>
                 </div>
             </div>
         </div>
         <div>
-            <div class="bg-[#0D0D0D] max-w-[16.5rem] h-[23rem] py-5">
-                <h2 class="text-3xl text-white font-semibold text-center">Selected - V</h2>
-                <ul>
+            <div class="bg-[#0D0D0D] max-w-[16.5rem] h-[23rem] py-5 px-10">
+                <h2 class="text-3xl text-white font-semibold text-center mb-5">Selected - V</h2>
+                <ul id="selected-area" class="list-decimal text-xl text-white font-semibold">
 
                 </ul>
             </div>
@@ -116,8 +116,11 @@
                     <p class="text-[#FF5E19]">$<span>00</span></p>
                 </div>
             </div>
+            
         </div>
     </section>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
