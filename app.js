@@ -85,7 +85,7 @@ document
     const manager = parseFloat(managerInput.value);
     const coach = parseFloat(coachInput.value);
 
-    if (typeof managerInput !== "number" || typeof coachInput == "number") {
+    if (typeof managerInput === "string" || typeof coachInput === "string") {
       alert("Name must be filled out");
       return false;
     } else {
